@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rexshi96.github.io</id>
     <title>myStudyNotes</title>
-    <updated>2020-07-11T04:20:58.225Z</updated>
+    <updated>2020-07-11T09:30:45.931Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rexshi96.github.io"/>
     <link rel="self" href="https://rexshi96.github.io/atom.xml"/>
@@ -290,6 +290,23 @@ redis 应用于最新消息展示</p>
 <li>Tips 12：redis 应用于基于黑名单与白名单设定的服务控制</li>
 <li>Tips 13：redis 应用于计数器组合排序功能对应的排名</li>
 </ul>
+<h2 id="4redis事务">4.redis事务</h2>
+<h3 id="41-事务">4.1 事务</h3>
+<p>redis事务就是一个命令执行的队列，将一系列预定义命令包装成一个队列。当执行时，一次性按照添加顺序依次执行，中间不会被打断或者干扰。</p>
+<p><strong>注意</strong>：multi加入事务的命令暂时进入到任务队列中，并没有立即执行，只有执行exec命令才开始执行</p>
+<p>事务定义过程中出现了问题，用discard取消事务</p>
+<p>命令格式出现问题，所有命令均不会执行。</p>
+<p>命令格式正确，无法正确执行，能够正确运行的命令会执行，错误的不会执行。</p>
+<p><strong>注意</strong>：已经执行完毕的命令对应的数据不会自动回滚，需要程序员自己在代码中实现回滚。</p>
+<h3 id="42锁">4.2锁</h3>
+<p>对key添加watch监控，发生变化，事务无法执行。</p>
+<p>Tips 18：</p>
+<pre><code>	* redis 应用基于状态控制的批量任务执行
+</code></pre>
+<h4 id="分布式锁">分布式锁</h4>
+<p>Tips 19：redis 应用基于分布式锁对应的场景控制</p>
+<p>锁自动释放；</p>
+<p>使用 expire 为锁key添加时间限定，到时不释放，放弃锁；具体时间需要业务确认。</p>
 ]]></content>
     </entry>
 </feed>
