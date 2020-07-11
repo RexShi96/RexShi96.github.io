@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://rexshi96.github.io</id>
+    <title>STUDY</title>
+    <updated>2020-07-11T02:17:49.191Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://rexshi96.github.io"/>
+    <link rel="self" href="https://rexshi96.github.io/atom.xml"/>
+    <subtitle>学习笔记</subtitle>
+    <logo>https://rexshi96.github.io/images/avatar.png</logo>
+    <icon>https://rexshi96.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, STUDY</rights>
+    <entry>
+        <title type="html"><![CDATA[TEST]]></title>
+        <id>https://rexshi96.github.io/post/test/</id>
+        <link href="https://rexshi96.github.io/post/test/">
+        </link>
+        <updated>2020-07-11T02:10:51.000Z</updated>
+        <content type="html"><![CDATA[<p>😏🤠😶😫🤗😗😇😌😝😣😐</p>
+]]></content>
+    </entry>
+</feed>
