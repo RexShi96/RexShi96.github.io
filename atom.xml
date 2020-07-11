@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rexshi96.github.io</id>
-    <title>STUDY</title>
-    <updated>2020-07-11T02:29:20.427Z</updated>
+    <title>mystudynote</title>
+    <updated>2020-07-11T02:33:00.849Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rexshi96.github.io"/>
     <link rel="self" href="https://rexshi96.github.io/atom.xml"/>
-    <subtitle>学习笔记</subtitle>
     <logo>https://rexshi96.github.io/images/avatar.png</logo>
     <icon>https://rexshi96.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, STUDY</rights>
+    <rights>All rights reserved 2020, mystudynote</rights>
     <entry>
         <title type="html"><![CDATA[Redis]]></title>
         <id>https://rexshi96.github.io/post/redis/</id>
